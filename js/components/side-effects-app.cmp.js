@@ -11,7 +11,9 @@ export default {
     
 
         <li v-if="listOfSE" v-for="SE in listOfSE" :key="SE.id">
-          <button @click="addSE(SE.id)" class="side-effect">{{SE.title}}</button>
+          <button @click="addSE(SE.id)" class="side-effect">
+          <span>{{SE.title}}</span>
+          </button>
         </li>
       
         </div>
@@ -30,11 +32,11 @@ export default {
                 { title: 'Altered senses', id: 3 },
                 { title: 'Nothing', id: 4 },
                 { title: 'Impaired body movement', id: 5 },
-                { title: 'difficulty with thinking and problem-solving', id: 6 },
+                { title: 'difficulty with thinking', id: 6 },
                 { title: 'impaired memory', id: 7 },
                 { title: 'Abdominal pain', id: 8 },
                 { title: 'Swelling', id: 9 },
-                { title: 'Hallucinations', id: 10 },
+                { title: 'Bad mood', id: 10 },
                 { title: 'Delusions', id: 11 },
                 { title: 'Sed', id: 12 },
                 { title: 'Happy', id: 13 },
