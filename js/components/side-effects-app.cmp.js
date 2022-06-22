@@ -3,15 +3,15 @@ export default {
     template: `
         <section>
         <div class= search-and-sort>
-        <input class="search-bar" type="text" placeholder="Search..." >
-        <button class="search-bar" > Sort by ABC  </button>
+        <input class="search-bar" v-model="search" type="text" placeholder="Search..." >
+        <button class="search-bar sort" > Sort by ABC  </button>
        
         </div>
         <div class="side-effects-container" > 
     
 
-        <li v-if="listOfSE" v-for="SE in listOfSE" :key="SE.id">
-          <button @click="addSE(SE.id)" class="side-effect">
+        <li v-if="listOfSE" v-for="SE in filteredItems() " :class="{ active: selectedSE.includes(SE) }" :key="SE.id">
+          <button @click="addAndRemove(SE)" class="side-effect">
           <span>{{SE.title}}</span>
           </button>
         </li>
@@ -26,6 +26,7 @@ export default {
     },
     data() {
         return {
+            search:'',
             listOfSE: [
                 { title: 'Altered sense of time', id: 1 },
                 { title: 'Changes in mood', id: 2 },
@@ -59,14 +60,24 @@ export default {
                 { title: 'Happy', id: 15 },
             ],
             selectedSE: []
+            ,
+            
         };
     },
     methods: {
+        filteredItems() {
+            return this.listOfSE.filter(sideEffect => {
+               return sideEffect.title.toLowerCase().indexOf(this.search.toLowerCase()) > -1
+            })
+          },
+          
+        addAndRemove(element) {
 
-        addSE(id) {
-            const currSE = this.listOfSE[id-1]
-            this.selectedSE.push(currSE) // push to data
-            // console.log(selectedSE);
+            const index = this.selectedSE.indexOf(element);
+            if (index > -1) {
+                this.selectedSE.splice(index, 1); // 2nd parameter means remove one item only
+            }else this.selectedSE.push(element) // push to data
+            
         },
     },
 };
