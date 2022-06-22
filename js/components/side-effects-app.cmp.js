@@ -4,7 +4,7 @@ export default {
         <section>
         <div class= search-and-sort>
         <input class="search-bar" v-model="search" type="text" placeholder="Search..." >
-        <button class="search-bar sort" > Sort by ABC  </button>
+        
        
         </div>
         <div class="side-effects-container" > 
