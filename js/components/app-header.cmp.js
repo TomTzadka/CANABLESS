@@ -5,7 +5,8 @@ export default {
         <img src="img/logo.png" alt="1">
         CANABLESS</div>
         
-        <span class="hello-user" >Hello {{userName}}!</span>
+        
+        <h3 class="hello-user">Hello {{userName}}!</h3>
         <h2>How are you?</h2>
         
         </section>
