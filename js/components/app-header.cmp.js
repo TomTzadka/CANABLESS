@@ -14,14 +14,5 @@ export default {
         userName: {
             type: String,
         }
-    } , 
-    data() {
-        return {
-            
-        };
-    },
-    methods: {
-      
-        
     },
 };

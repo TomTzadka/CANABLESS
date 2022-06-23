@@ -24,25 +24,28 @@ export default {
   },
   data() {
     return {
-      newSE: {title: ''}
-      // selected: []
+      newSE: {title: ''},
+      // newSEList: []
     };
   },
   methods: {
     saveToLocalStorage(){
-
       localStorage.setItem("userSE", JSON.stringify(this.selectedSE));
     },
     addNewSE(){
-      console.log(this.selectedSE);
-      this.selectedSE.push(this.newSE)
+      // const seToAdd = Object.assign(newSE) 
+      // console.log(seToAdd);
+      // this.selectedSE.push(this.seToAdd);
+      // this.newSE = {title: ''}
+      console.log(this.newSE);
+
+      this.selectedSE.push(this.newSE);
+      // this.newSE.title = '';
       
     },
     removeSE(element) {
       const index = this.selectedSE.indexOf(element);
       this.selectedSE.splice(index, 1);
-        
-      
     }
 
   },

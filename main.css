@@ -1,7 +1,6 @@
 body {
-    /* font-style: Abhaya Libre SemiBold; */
     margin: 0;
-    font-family: Abhaya Libre SemiBold;
+    font-family: sans-serif;
     box-sizing: border-box;
 }
 
@@ -21,16 +20,12 @@ li.active>button {
 }
 
 .header {
-    font-size: 40px;
-    height: 25vh;
+    font-size: 30px;
     background-color: rgb(255, 255, 255);
-    /* text-align: center; */
 
 }
 
 .logo {
-    /* background-color: #93E237; */
-    /* background-color: rgb(253, 186, 16); */
     background-color: rgb(36, 127, 37);
     color: white;
     height: 5vh;
@@ -46,9 +41,10 @@ li.active>button {
 .hello-user {
     font-size: 28px;
     padding-left: 20px;
+    padding-top: 40px;
 }
 h2{
-    margin-left: 7px;
+    margin-left: 20px;
 }
 .search-and-sort {
     height: 4vh;
@@ -56,7 +52,7 @@ h2{
 
 .search-bar {
     margin-top: 10px;
-    height: 80%;
+    height: 100%;
     width: 30%;
     box-sizing: border-box;
     margin-left: 10px;
@@ -76,7 +72,7 @@ h2{
     margin-top: 10px;
     padding: 5px;
     display: flex;
-    justify-content: center;    
+    /* justify-content: center;     */
     gap: 10px;
     flex-wrap: wrap;
     background-color: rgb(255, 255, 255);
@@ -86,7 +82,7 @@ h2{
 }
 
 .side-effect {
-    /* height: 40px; */
+    /* height: 35px; */
     /* width: 100px; */
     font-weight: bold;
     margin-top: 10px;
@@ -95,15 +91,11 @@ h2{
     align-items: flex-start;
     padding: 5px 12px ;
     gap: 10px;
-    /* position: absolute; */
-    /* width: 93px; */
-    /* height: 39px; */
-    /* left: 246px; */
-    /* top: 230px; */
 
+    color: #000000cd;
     background-color: rgba(255, 221, 134, 0.4);
-    border: 1px solid #000000;
-    box-shadow: -2px 2px 0px #000000;
+    border: 1px solid rgb(250, 211, 110);
+    /* box-shadow: -2px 2px 0px #000000; */
     border-radius: 36px;
 }
 
@@ -140,9 +132,7 @@ h2{
 }
 
 .selected-SE-btn {
-    /* display: flex; */
-    /* flex-direction: column; */
-
+    justify-items: center;
 
 }
 
