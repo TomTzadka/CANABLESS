@@ -39,7 +39,7 @@ export default {
                 { title: 'Swelling', id: 9 },
                 { title: 'Bad mood', id: 10 },
                 { title: 'Delusions', id: 11 },
-                { title: 'Sed', id: 12 },
+                { title: 'Sad', id: 12 },
                 { title: 'Constipation', id: 13 },
                 { title: 'Diarrhea', id: 14 },
                 { title: 'Dizziness', id: 15 },

@@ -40,7 +40,7 @@ export default {
       console.log(this.newSE);
 
       this.selectedSE.push(this.newSE);
-      this.newSE.title = '';
+      // this.newSE.title = '';
       
     },
     removeSE(element) {

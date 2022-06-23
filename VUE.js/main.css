@@ -1,5 +1,4 @@
 body {
-    /* font-style: Abhaya Libre SemiBold; */
     margin: 0;
     font-family: sans-serif;
     box-sizing: border-box;
@@ -83,21 +82,17 @@ h2{
 }
 
 .side-effect {
-    height: 35px;
+    /* height: 35px; */
     /* width: 100px; */
     font-weight: bold;
     margin-top: 10px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 10px 12px ;
+    padding: 5px 12px ;
     gap: 10px;
-    /* position: absolute; */
-    /* width: 93px; */
-    /* height: 39px; */
-    /* left: 246px; */
-    /* top: 230px; */
-    color: #00000095;
+
+    color: #000000cd;
     background-color: rgba(255, 221, 134, 0.4);
     border: 1px solid rgb(250, 211, 110);
     /* box-shadow: -2px 2px 0px #000000; */
@@ -137,9 +132,7 @@ h2{
 }
 
 .selected-SE-btn {
-    /* display: flex; */
-    /* flex-direction: column; */
-
+    justify-items: center;
 
 }
 
