@@ -3,13 +3,13 @@ export default {
     template: `
         <section>
         <div class= search-and-sort>
-        <input class="search-bar" v-model="search" type="text" placeholder="Search..." >
+        <input class="search-bar" v-model="search" type="text" placeholder="🔎 Search..." >
         
        
         </div>
         <div class="side-effects-container" > 
     
-
+        
         <li v-if="listOfSE" v-for="SE in filteredItems() " :class="{ active: selectedSE.includes(SE) }" :key="SE.id">
           <button @click="addAndRemove(SE)" class="side-effect">
           <span>{{SE.title}}</span>
