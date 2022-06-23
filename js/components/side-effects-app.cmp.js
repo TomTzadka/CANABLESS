@@ -3,19 +3,15 @@ export default {
     template: `
         <section>
         <div class= search-and-sort>
-        <input class="search-bar" v-model="search" type="text" placeholder="🔎 Search..." >
-        
-       
+            <input class="search-bar" v-model="search" type="text" placeholder="🔎 Search..." >
         </div>
+
         <div class="side-effects-container" > 
-    
-        
-        <li v-if="listOfSE" v-for="SE in filteredItems() " :class="{ active: selectedSE.includes(SE) }" :key="SE.id">
-          <button @click="addAndRemove(SE)" class="side-effect">
-          <span>{{SE.title}}</span>
-          </button>
-        </li>
-      
+            <li v-if="listOfSE" v-for="SE in filteredItems() " :class="{ active: selectedSE.includes(SE) }" :key="SE.id">
+                <button @click="addAndRemove(SE)" class="side-effect">
+                    <span>{{SE.title}}</span>
+                </button>
+            </li>
         </div>
 
         <appFooter :selectedSE="selectedSE" />
@@ -70,7 +66,6 @@ export default {
             ],
             selectedSE: []
             ,
-            
         };
     },
     methods: {
@@ -79,14 +74,11 @@ export default {
                return sideEffect.title.toLowerCase().indexOf(this.search.toLowerCase()) > -1
             })
           },
-          
         addAndRemove(element) {
-
             const index = this.selectedSE.indexOf(element);
             if (index > -1) {
                 this.selectedSE.splice(index, 1); // 2nd parameter means remove one item only
             }else this.selectedSE.push(element) // push to data
-            
         },
     },
 };

@@ -9,16 +9,12 @@ const options = {
   components: {
     sideEffectsApp,
     appHeader,
-   
   },
   data() {
     return {
       userName: 'Tom tzadka',
-
-
     }
   }
 };
-
 const app = Vue.createApp(options);
 app.mount("#app");

@@ -10,20 +10,9 @@ h3,
 p {
     margin: 0;
 }
-
-li {
-    list-style: none;
-}
-li.active>button {
-    background-color:green;
-    background-color: rgb(253, 205, 84);
-    
-}
-
 .header {
     font-size: 30px;
     background-color: rgb(255, 255, 255);
-
 }
 
 .logo {
@@ -32,7 +21,6 @@ li.active>button {
     height: 5vh;
     font-size: 70%;
     padding: 15px;
-
 }
 
 .logo img {
@@ -58,13 +46,10 @@ h2{
     height: 100%;
     width: 30%;
     box-sizing: border-box;
-    /* margin-left: 10px; */
     flex-direction: row;
     align-items: flex-start;
     padding: 2px 15px 4px 24px;
     gap: 10px;
-
-
 
     background: #FFFFFF;
     border: 1px solid #000000;
@@ -76,7 +61,6 @@ h2{
     padding-left: 15px;
     padding-top: 10px;
     display: flex;
-    /* justify-content: center;     */
     gap: 10px;
     flex-wrap: wrap;
     background-color: rgb(255, 255, 255);
@@ -84,10 +68,14 @@ h2{
     overflow: auto;
     align-content: flex-start;
 }
-
+li {
+    list-style: none;
+}
+li.active>button {
+    background-color: rgb(253, 205, 84);
+}
 .side-effect {
-    /* height: 35px; */
-    /* width: 100px; */
+
     font-weight: bold;
     font-size: 15px;
     margin-top: 10px;
@@ -100,14 +88,12 @@ h2{
     color: #000000cd;
     background-color: rgba(255, 221, 134, 0.4);
     border: 1px solid rgb(250, 211, 110);
-    /* box-shadow: -2px 2px 0px #000000; */
     border-radius: 36px;
 }
 
 .footer {
     height: 21vh;
     padding: 20px;
-
 }
 
 .free-text {
@@ -122,23 +108,19 @@ h2{
     background-color: #71aa30;
     font-size: 100%;
     border-radius: 10%;
-    
 }
 .confirm{
     background-color: #719ded;
-
 }
 .selectedSE-container {
     display: flex;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     flex-wrap: wrap;
-
 }
 
 .selected-SE-btn {
     justify-items: center;
-
 }
 
 .remove-btn {
