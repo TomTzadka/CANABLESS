@@ -48,13 +48,14 @@ li.active>button {
     padding-left: 20px;
 }
 h2{
-    padding: 28px;
+    margin-left: 7px;
 }
 .search-and-sort {
     height: 4vh;
 }
 
 .search-bar {
+    margin-top: 10px;
     height: 80%;
     width: 30%;
     box-sizing: border-box;
@@ -72,13 +73,14 @@ h2{
 }
 
 .side-effects-container {
+    margin-top: 10px;
     padding: 5px;
     display: flex;
     justify-content: center;    
     gap: 10px;
     flex-wrap: wrap;
     background-color: rgb(255, 255, 255);
-    height: 50vh;
+    height: 40vh;
     overflow: auto;
     align-content: flex-start;
 }
@@ -138,8 +140,10 @@ h2{
 }
 
 .selected-SE-btn {
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
+
+
 }
 
 .remove-btn {

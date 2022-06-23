@@ -2,7 +2,7 @@ export default {
 
   template: `
     <section class="footer" >
-    <input class="free-text" type="text" v-model="newSE.title" placeholder="You want to elaborate? type">
+    <input class="free-text" type="text" v-model="newSE.title" placeholder="Something else? type...">
     <button class="add-btn" @click="addNewSE()" >Add</button>
     <button class="add-btn confirm" @click="saveToLocalStorage()" >Confirm</button>
   <div class="selectedSE-container">
