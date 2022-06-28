@@ -32,6 +32,7 @@ export default {
       alert('Good day ❤️')
     },
     addNewSE(){
+      if(!this.newSE.title) return
       let newAdedSE = {title: this.newSE.title}
       this.selectedSE.push(newAdedSE);
       this.newSE.title = '';
