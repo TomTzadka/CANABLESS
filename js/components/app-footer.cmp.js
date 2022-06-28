@@ -29,6 +29,7 @@ export default {
   methods: {
     saveToLocalStorage(){
       localStorage.setItem("userSE", JSON.stringify(this.selectedSE));
+      alert('Good day ❤️')
     },
     addNewSE(){
       let newAdedSE = {title: this.newSE.title}
